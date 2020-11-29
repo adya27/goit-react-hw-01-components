@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
+import styles from './Statistics.module.css';
 
 function Statistics({ title = 'Upload stats', label, percentage }) {
   return (
-    <ul className="stat-list">
-      <li className="item">
+
+      <li className={styles.item}>
         <span className="label">{label} </span>
         <span className="percentage">{percentage}</span>
       </li>
-    </ul>
+
   );
 }
 

@@ -1,7 +1,7 @@
 import './App.css';
 import Profile from './components/Profile/Profile';
-import StatisticList from './components/StatisticList/StatisticList';
-import FriendList from './components/FriendList/FriendList';
+import StatisticList from './components/StatisticsList/StatisticList';
+import FriendList from './components/FriendsList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 import user from './user.json';

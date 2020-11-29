@@ -1,0 +1,13 @@
+.statList{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+
+}
+.item{
+  width: 50px;
+  display: block;
+  background-color: green;
+
+}
