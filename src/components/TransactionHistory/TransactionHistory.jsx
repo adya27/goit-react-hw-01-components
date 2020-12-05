@@ -1,25 +1,33 @@
 import PropTypes from 'prop-types';
-import Transaction from '../Transaction/Transaction';
+import Transaction from './Transaction';
 
 function TransactionHistory({ props }) {
   return (
-    <table className="transaction-history">
+    <table
+      style={{ marginLeft: 'auto', marginRight: 'auto' }}
+      className="transaction-history"
+    >
       <thead>
         <tr>
-          <th> Type </th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th style={{ backgroundColor: 'teal' }}> Type </th>
+          <th style={{ backgroundColor: 'teal' }}>Amount</th>
+          <th style={{ backgroundColor: 'teal' }}>Currency</th>
         </tr>
       </thead>
       <tbody>
-        {props.map(prop => (
-          <Transaction
-            key={prop.id}
-            type={prop.type}
-            currency={prop.currency}
-            amount={prop.amount}
-          />
-        ))}
+        {props.map((prop, index) => {
+          let color = index % 2 === 0 ? 'green' : 'yellow';
+
+          return (
+            <Transaction
+              color={color}
+              key={prop.id}
+              type={prop.type}
+              currency={prop.currency}
+              amount={prop.amount}
+            />
+          );
+        })}
       </tbody>
     </table>
   );

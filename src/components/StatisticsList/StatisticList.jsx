@@ -8,15 +8,14 @@ function statisticList({ title = 'Upload stats', stats }) {
     <section className={styles.statistics}>
       <h2 className={styles.title}>{title}</h2>
       <ul className={styles.statList}>
-      {stats.map(prop => (
-        <Statistics
-          key={prop.id}
-          stats={prop}
-          label={prop.label}
-          percentage={prop.percentage + '%'}
-        />
-
-      ))}
+        {stats.map(prop => (
+          <Statistics
+            key={prop.id}
+            stats={prop}
+            label={prop.label}
+            percentage={prop.percentage + '%'}
+          />
+        ))}
       </ul>
     </section>
   );

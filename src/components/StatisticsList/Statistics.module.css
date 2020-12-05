@@ -1,13 +1,26 @@
-.statList{
+.statList {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: row;
-  background-color: red;
-
+  /*background-color: red;*/
 }
-.item{
-  width: 50px;
-  display: block;
-  background-color: green;
+.item {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label,
+.percentage {
+  text-align: center;
 }
