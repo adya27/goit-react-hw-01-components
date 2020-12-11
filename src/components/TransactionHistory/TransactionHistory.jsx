@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
 import Transaction from './Transaction';
+import styles from './TransactionHistory.module.css';
 
 function TransactionHistory({ props }) {
   return (
-    <table
-      style={{ marginLeft: 'auto', marginRight: 'auto' }}
-      className="transaction-history"
-    >
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th style={{ backgroundColor: 'teal' }}> Type </th>

@@ -10,7 +10,7 @@ function getRandomColor() {
   return color;
 }
 
-function Statistics({ title = 'Upload stats', label, percentage }) {
+function Statistics({ label, percentage }) {
   return (
     <li className={styles.item} style={{ backgroundColor: getRandomColor() }}>
       <span className={styles.label}>{label} </span>
